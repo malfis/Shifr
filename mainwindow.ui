@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Солярис [Версия 0.035]</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="0" colspan="3">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>Настройка параметров раунда</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_11">
+       <item row="0" column="3">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>21</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Количество раундов:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="7">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="documentMode">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QStackedWidget" name="stackedWidget_3">
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="page_11">
+          <layout class="QGridLayout" name="gridLayout_17">
+           <item row="0" column="10">
+            <widget class="QSpinBox" name="spinBox_9">
+             <property name="minimum">
+              <number>4</number>
+             </property>
+             <property name="maximum">
+              <number>241</number>
+             </property>
+             <property name="value">
+              <number>81</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QSpinBox" name="spinBox_8">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>238</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="17">
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>Б2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="13">
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>P2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QSpinBox" name="spinBox_3">
+             <property name="minimum">
+              <number>2</number>
+             </property>
+             <property name="maximum">
+              <number>239</number>
+             </property>
+             <property name="value">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>&lt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="9">
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>&lt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QSpinBox" name="spinBox_4">
+             <property name="minimum">
+              <number>3</number>
+             </property>
+             <property name="maximum">
+              <number>240</number>
+             </property>
+             <property name="value">
+              <number>40</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>&lt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="19">
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>-&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="16">
+            <widget class="QSpinBox" name="spinBox_7">
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>5</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="12">
+            <widget class="QSpinBox" name="spinBox_5">
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>70</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="14">
+            <widget class="QSpinBox" name="spinBox_6">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>25</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="11">
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>P1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="18">
+            <widget class="QSpinBox" name="spinBox_10">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>120</number>
+             </property>
+             <property name="value">
+              <number>80</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="15">
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>P3</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_12">
+          <layout class="QGridLayout" name="gridLayout_18">
+           <item row="0" column="3">
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>Сгенерировать</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Сохранить</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_12">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Конфигурационный ключ (КК)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Открыть</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>ДВ</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Maximum</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>0</width>
+        <height>3000</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0" rowspan="2">
+     <widget class="QToolBox" name="toolBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1434</width>
+         <height>1268</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Схемы и тесты</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>Нормировка</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="pic.qrc">:/0.jpg</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Шифрование</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="pic.qrc">:/1.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Расшифрование</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="pixmap">
+               <pixmap resource="pic.qrc">:/2.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Получение файла</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>ОК и Критерий 1 </string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>Критерий 2</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>Генерация</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Поэтапное преобразование блока</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>669</width>
+         <height>577</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Редактирование таблиц замен</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget">
+          <row>
+           <property name="text">
+            <string>00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>01</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>00</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>01</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </column>
+          <item row="0" column="0">
+           <property name="text">
+            <string>0110</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="1">
+           <property name="text">
+            <string>1001</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="2">
+           <property name="text">
+            <string>1111</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="3">
+           <property name="text">
+            <string>0011</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string>1010</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="1">
+           <property name="text">
+            <string>1100</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="2">
+           <property name="text">
+            <string>0001</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="3">
+           <property name="text">
+            <string>1000</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string>0101</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="1">
+           <property name="text">
+            <string>0111</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="2">
+           <property name="text">
+            <string>0100</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="3">
+           <property name="text">
+            <string>1011</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string>1110</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="1">
+           <property name="text">
+            <string>0000</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="2">
+           <property name="text">
+            <string>1101</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="3">
+           <property name="text">
+            <string>0010</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QListWidget" name="listWidget">
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>Таблица1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Таблица2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Таблица3</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>669</width>
+         <height>577</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Редактирование неприводимых многочленов</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="3" column="0" colspan="2">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Cписки нумерации по степени:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" rowspan="5" colspan="8">
+         <widget class="QTableWidget" name="tableWidget_3">
+          <property name="editTriggers">
+           <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6" colspan="2">
+         <widget class="QCheckBox" name="checkBox_4">
+          <property name="text">
+           <string>Показать все</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="10">
+         <widget class="QTableWidget" name="tableWidget_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>51</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="10">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Количество по степени:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3" colspan="2">
+         <widget class="QSpinBox" name="spinBox_2">
+          <property name="focusPolicy">
+           <enum>Qt::WheelFocus</enum>
+          </property>
+          <property name="minimum">
+           <number>2</number>
+          </property>
+          <property name="maximum">
+           <number>240</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="8" column="8" colspan="2">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>Операции (по модулю бит в сегменте)</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string>01101110</string>
+             </property>
+             <property name="maxLength">
+              <number>32767</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="text">
+              <string>11010111</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>Сложение</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>Вычитание</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="8" rowspan="5" colspan="2">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="maximumSize">
+           <size>
+            <width>327</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Калькулятор обратных многочленов (модуль 2)</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_3">
+             <property name="maximumSize">
+              <size>
+               <width>307</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Неприводимый многочлен</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="EditShifr" name="plainTextEdit_5">
+             <property name="plainText">
+              <string>100000000000000000000000000000000101</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="EditShifr" name="plainTextEdit_4">
+             <property name="plainText">
+              <string>11010101</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Исходный многочлен</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="EditShifr" name="plainTextEdit_3">
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="135">
+                   <red>50</red>
+                   <green>200</green>
+                   <blue>78</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="135">
+                   <red>50</red>
+                   <green>200</green>
+                   <blue>78</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>240</red>
+                   <green>240</green>
+                   <blue>240</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>Вычислить обратный многочлен</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="2" rowspan="2">
+     <widget class="QToolBox" name="toolBox_2">
+      <property name="maximumSize">
+       <size>
+        <width>325</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>325</width>
+         <height>631</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Интерфейс пользователя</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="2" alignment="Qt::AlignLeft">
+         <widget class="QCheckBox" name="checkBox_2">
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="text">
+           <string>Файл</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>Сгенерировать</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="EditShifr" name="plainTextEdit_2">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="plainText">
+           <string>010010111100011010100101000101110000001000111111100100010100101111010111101010000101101010110111111000101110110111111100111010011010011100110010000001001001101011001001101011110001101000110011001010011100111010000100100100011000011011010110110101110010010100111110101111001101000111011000100100110110110100100100100111111011000111010100111101110000111010101001100000001110001001100000000010100110011010110101010010111011100110001001100000000010100011010001001000110101101011001110100101001100100111110100001011100001110010000110111000101011111111110110010000110111111111110101110110110001010010010000001110000001110011000110011101010111010000110101101000101110011101110110010100001110100101111101100000011110010111101000</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>15</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>MS Shell Dlg 2</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Общий ключ (ОК)</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <widget class="QStackedWidget" name="stackedWidget_2">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_6">
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="2" column="0" colspan="2">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Исходный текст (ИТ)</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignRight">
+               <widget class="QCheckBox" name="checkBox">
+                <property name="text">
+                 <string>Двоичный вид</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="3" column="0" colspan="2">
+             <widget class="EditIsxod" name="plainTextEdit">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="plainText">
+               <string>Введите текст для шифрования...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0" colspan="2">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QCheckBox" name="checkBox_3">
+                <property name="text">
+                 <string>Оценка СлРаспПосл</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="checkBox_5">
+                <property name="text">
+                 <string>Нормированный ИТ</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="9" column="0" colspan="2">
+             <widget class="EditShifr2" name="plainTextEdit_6">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>61</height>
+               </size>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1" alignment="Qt::AlignRight">
+             <widget class="QRadioButton" name="radioButton_2">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>15</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Расшифровать</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QRadioButton" name="radioButton">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>15</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Зашифровать</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0" colspan="2">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_11">
+                <property name="font">
+                 <font>
+                  <family>MS Shell Dlg 2</family>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Шифртекст (ШТ)</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignRight">
+               <widget class="QLabel" name="label_14">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="text">
+                 <string>(0 бит)</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="12" column="0" colspan="2">
+             <widget class="QStackedWidget" name="stackedWidget">
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <widget class="QWidget" name="page_3">
+               <layout class="QGridLayout" name="gridLayout_15">
+                <item row="0" column="0">
+                 <widget class="QPlainTextEdit" name="plainTextEdit_7">
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_4">
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="1" column="0" colspan="3">
+                 <layout class="QGridLayout" name="gridLayout_16">
+                  <item row="0" column="0" rowspan="3">
+                   <widget class="QLabel" name="label_16">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Критерий 1:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1" rowspan="3">
+                   <widget class="QLabel" name="label_17">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>?</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2" rowspan="3" colspan="2">
+                   <widget class="QLabel" name="label_15">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Критерий 2:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4" rowspan="3">
+                   <widget class="QLabel" name="label_18">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>?</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="1" colspan="2">
+                 <widget class="QGraphicsView" name="graphicsView">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="verticalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOff</enum>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOff</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QListWidget" name="listWidget_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>91</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="isWrapping" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="layoutMode">
+                   <enum>QListView::SinglePass</enum>
+                  </property>
+                  <property name="viewMode">
+                   <enum>QListView::ListMode</enum>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="3">
+                 <widget class="QComboBox" name="comboBox">
+                  <item>
+                   <property name="text">
+                    <string>Тест 960 ТЕКСТ UNICODE</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 960 00000000</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 960 RANDOM</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 5040 ТЕКСТ UNICODE</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 5040 00000000</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 5040 RANDOM</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 24480 ТЕКСТ UNICODE</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 24480 00000000</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Тест 24480 RANDOM</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_7">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="1" column="1" colspan="2">
+             <widget class="QPushButton" name="pushButton">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Открыть файл</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QRadioButton" name="radioButton_4">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string>Расшифровать</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QRadioButton" name="radioButton_3">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string>Зашифровать</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" colspan="2">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="1" colspan="2">
+             <layout class="QHBoxLayout" name="layoutn">
+              <item>
+               <widget class="QLineEdit" name="lineEdit_4">
+                <property name="text">
+                 <string>Откройте файл!</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_13">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;0 мс&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="3" rowspan="4">
+             <layout class="QVBoxLayout" name="verticalLayout"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>EditShifr</class>
+   <extends>QPlainTextEdit</extends>
+   <header>specedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>EditIsxod</class>
+   <extends>QPlainTextEdit</extends>
+   <header>specedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>EditShifr2</class>
+   <extends>QPlainTextEdit</extends>
+   <header>specedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections/>
+</ui>
